@@ -64,8 +64,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero">
-        <div className="absolute inset-0 bg-black/2" />
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero bg-cover bg-center bg-no-repeat ">
+        <div className="absolute inset-0 bg-black/30  backdrop-blur-sm" />
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             SipSparks 
