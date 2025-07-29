@@ -16,9 +16,9 @@ const Index = () => {
     {
       id: "1",
       name: "Rose Quartz",
-      price: "2200L",
+      price: "1700L",
       image: tumbler1,
-      description: "1200ml",
+      description: "900ml",
       popular: true
     },
     {
