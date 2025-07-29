@@ -103,7 +103,9 @@ const Index = () => {
               Our Collection
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover our range of premium tumblers, each designed with attention to detail and crafted for everyday luxury.
+              {/* Discover our range of premium tumblers, each designed with attention to detail and crafted for everyday luxury. */}
+              Zbuloni gamën tonë të gotave premium, secila e dizajnuar me kujdes për detajet dhe e punuar për luksin e përditshëm.
+
             </p>
             <p style={{paddingTop:'10px'}}className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Delivery
@@ -132,7 +134,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Our Tumblers?</h2>
+            <h2 className="text-4xl font-bold mb-4">Pse të zgjedhësh gotat tona termike?</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -140,9 +142,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
+              <h3 className="text-xl font-semibold mb-2">Cilësi që bën diferencën</h3>
               <p className="text-muted-foreground">
-                Made from high-grade stainless steel with double-wall insulation for optimal temperature retention.
+               Tumblerët tanë janë prodhuar nga çelik inox premium dhe me izolim të dyfishtë për ta mbajtur pijen tuaj të ftohtë apo të ngrohtë për orë të tëra.
               </p>
             </div>
             
@@ -150,9 +152,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Stylish Design</h3>
+              <h3 className="text-xl font-semibold mb-2">Dizajn që të përfaqëson</h3>
               <p className="text-muted-foreground">
-                 Aesthetics that complement your lifestyle and personal brand.
+                 Elegant, modern dhe i përshtatur për çdo stil – ideal për zyrë, palestër apo udhëtime.
               </p>
             </div>
             
@@ -160,9 +162,10 @@ const Index = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
+              <h3 className="text-xl font-semibold mb-2">Dërgesë e shpejtë dhe e sigurt</h3>
               <p className="text-muted-foreground">
-                Quick and secure shipping to get your new tumbler to you as soon as possible.
+                {/* Quick and secure shipping to get your new tumbler to you as soon as possible. */} 
+                ketu vendos te dhenat e transportit.
               </p>
             </div>
           </div>
