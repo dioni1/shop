@@ -36,7 +36,7 @@ export function ProductCard({ id, name, price, image, description, popular, onOr
           
           <div className="flex items-center justify-between">
             <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              ${price}
+              {price}
             </span>
             <Button 
               onClick={() => onOrder({ id, name, price })}

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, User, MessageSquare } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 interface OrderModalProps {
   isOpen: boolean;
@@ -27,17 +28,37 @@ export function OrderModal({ isOpen, onClose, product }: OrderModalProps) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      product_name: product?.name,
+      product_price: product?.price
+    };
+
+    try {
+      await emailjs.send(
+        'service_8etlehv', // From EmailJS dashboard
+        'template_gav3mrc', // From EmailJS dashboard
+        templateParams,
+        '-Vedm-sX6VmdwT4Pe' // From EmailJS dashboard
+      );
       toast({
         title: "Order Submitted! 🎉",
         description: "Thank you for your interest! We'll contact you soon to confirm your order.",
       });
-      
       setFormData({ name: "", email: "", phone: "", message: "" });
-      setIsSubmitting(false);
       onClose();
-    }, 1000);
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to submit order. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -62,7 +83,7 @@ export function OrderModal({ isOpen, onClose, product }: OrderModalProps) {
           <div className="flex justify-between items-center">
             <span className="font-medium">{product.name}</span>
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              ${product.price}
+              {product.price} + Transport
             </span>
           </div>
         </div>

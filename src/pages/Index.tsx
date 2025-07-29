@@ -7,7 +7,7 @@ import tumbler1 from "@/assets/tumbler-1.jpg";
 import tumbler2 from "@/assets/tumbler-2.jpg";
 import tumbler3 from "@/assets/tumbler-3.jpg";
 import tumbler4 from "@/assets/tumbler-4.jpg";
-
+import tumbler5 from "@/assets/tumbler-5.jpg";
 const Index = () => {
   const [selectedProduct, setSelectedProduct] = useState<{ id: string; name: string; price: string } | null>(null);
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
@@ -15,32 +15,39 @@ const Index = () => {
   const products = [
     {
       id: "1",
-      name: "Rose Gold Elegance",
-      price: "29.99",
+      name: "Rose Quartz",
+      price: "2200L",
       image: tumbler1,
-      description: "Premium stainless steel tumbler with rose gold finish. Perfect for your morning coffee or evening tea.",
+      description: "1200ml",
       popular: true
     },
     {
       id: "2", 
-      name: "Midnight Black",
-      price: "24.99",
+      name: "Black",
+      price: "2200L",
       image: tumbler2,
-      description: "Sleek matte black design with gold accents. A sophisticated choice for any beverage."
+      description: "1200ml"
     },
     {
       id: "3",
-      name: "Sunset Vibes", 
-      price: "27.99",
+      name: "Sky blue", 
+      price: "2200L",
       image: tumbler3,
-      description: "Vibrant gradient colors that match your Instagram aesthetic. Stand out in style."
+      description: "1200ml"
     },
     {
       id: "4",
-      name: "Classic White",
-      price: "22.99", 
+      name: "Tie-dye Blue",
+      price: "2400L", 
       image: tumbler4,
-      description: "Timeless white design with elegant typography. Simple yet beautiful."
+      description: "1200ml/pipez metalike/pastruese per pipezen dhe goten"
+    },
+    {
+      id: "5",
+      name: "Pink Bow Tulip ",
+      price: "2000L", 
+      image: tumbler5,
+      description: "900ml"
     }
   ];
 
@@ -58,10 +65,10 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero">
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/2" />
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Premium Tumblers
+            SipSparks 
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">
             Elevate your beverage experience with our beautifully crafted tumblers. 
@@ -79,7 +86,7 @@ const Index = () => {
               variant="outline" 
               size="lg"
               className="bg-white/10 text-white border-white/30 hover:bg-white/20"
-              onClick={() => window.open('https://instagram.com', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/sipsparks_al?igsh=MTdhaW9yZ2JkNTFvcw%3D%3D&utm_source=qr', '_blank')}
             >
               <Instagram className="mr-2 h-5 w-5" />
               Follow Us
@@ -97,6 +104,15 @@ const Index = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover our range of premium tumblers, each designed with attention to detail and crafted for everyday luxury.
+            </p>
+            <p style={{paddingTop:'10px'}}className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Delivery
+            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Albania: 200L
+            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Kosovo/North Macedonia: 5 euro
             </p>
           </div>
 
@@ -136,7 +152,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">Stylish Design</h3>
               <p className="text-muted-foreground">
-                Instagram-worthy aesthetics that complement your lifestyle and personal brand.
+                 Aesthetics that complement your lifestyle and personal brand.
               </p>
             </div>
             
@@ -167,20 +183,20 @@ const Index = () => {
             <div className="flex flex-col items-center p-6 rounded-xl bg-gradient-card">
               <Instagram className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Instagram</h3>
-              <p className="text-muted-foreground text-sm">@yourtumblershop</p>
+              <p className="text-muted-foreground text-sm">@sipsparks_al</p>
             </div>
             
-            <div className="flex flex-col items-center p-6 rounded-xl bg-gradient-card">
+            {/* <div className="flex flex-col items-center p-6 rounded-xl bg-gradient-card">
               <Mail className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Email</h3>
               <p className="text-muted-foreground text-sm">hello@tumblers.com</p>
-            </div>
+            </div> */}
             
-            <div className="flex flex-col items-center p-6 rounded-xl bg-gradient-card">
+            {/* <div className="flex flex-col items-center p-6 rounded-xl bg-gradient-card">
               <Phone className="h-8 w-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Phone</h3>
               <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
