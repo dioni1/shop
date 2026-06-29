@@ -8,6 +8,8 @@ import tumbler2 from "@/assets/tumbler-2.jpg";
 import tumbler3 from "@/assets/tumbler-3.jpg";
 import tumbler4 from "@/assets/tumbler-4.jpg";
 import tumbler5 from "@/assets/tumbler-5.jpg";
+import tumbler6 from "@/assets/tumbler-6.jpg";
+import tumbler7 from "@/assets/tumbler-7.jpg";
 const Index = () => {
   const [selectedProduct, setSelectedProduct] = useState<{ id: string; name: string; price: string } | null>(null);
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
@@ -15,39 +17,53 @@ const Index = () => {
   const products = [
     {
       id: "1",
-      name: "Rose Quartz",
-      price: "1700L",
+     name: "",
+      price: "Cmimi :2000L  ",
       image: tumbler1,
-      description: "900ml",
+      description: "1200ml",
       popular: true
     },
     {
       id: "2", 
-      name: "Black",
-      price: "2200L",
+      name: "",
+      price: "1600L",
       image: tumbler2,
-      description: "1200ml"
+      description: "900ml"
     },
     {
       id: "3",
-      name: "Sky blue", 
-      price: "2200L",
+     name: "", 
+      price: "1600L",
       image: tumbler3,
-      description: "1200ml"
+      description: "900ml"
     },
     {
       id: "4",
-      name: "Tie-dye Blue",
-      price: "2400L", 
+      name: "",
+      price: "2000L", 
       image: tumbler4,
-      description: "1200ml/pipez metalike/pastruese per pipezen dhe goten"
+      description: "1200ml"
     },
     {
       id: "5",
-      name: "Pink Bow Tulip ",
-      price: "2000L", 
+      name: "",
+      price: "1600L", 
       image: tumbler5,
       description: "900ml"
+    },
+    {
+      id: "6",
+      name: "",
+      price: "1700L", 
+      image: tumbler6,
+      description: "890ml"
+    },
+    {
+      id: "7",
+      name: "",
+      price: "1600L", 
+      image: tumbler7,
+      description: "1200ml"
     }
   ];
 
